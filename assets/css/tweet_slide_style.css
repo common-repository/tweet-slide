@@ -1,0 +1,231 @@
+/*
+Plugin Name: Tweeter Feed Slider
+Plugin URI: http://themewar.com/plugins/tweetslide
+Description: Twitter Feed Slider
+Version: 1.0.1
+Author: Themewar
+Author URI: http://themewar.com
+License: 
+Text Domain: themewar
+*/
+
+.tweetSlideSection{
+    width: 100%;
+    position: relative;
+    padding: 100px 0px;
+    background: url(../images/bg1.jpg) no-repeat center center fixed;
+    position: relative;
+}
+.tweetSlideSection.tweetBrallax{
+    background: #fff;
+}
+.tweetSlideOverlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+}
+.tweetsliderContent {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .tweetsliderContent {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .tweetsliderContent {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .tweetsliderContent {
+    width: 1170px;
+  }
+}
+.tweetsliderColumn {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+.singleTwitt{
+    text-align: center;
+    width: 100%;
+}
+.twittIcon {
+    background: url(../images/tweet.png) no-repeat center center #FFF;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 50px;
+    height: 75px;
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
+    width: 75px;
+}
+.twittImage{
+    background: #5EA9DD none repeat scroll 0 0;
+    border-radius: 50%;
+    height: 48px;
+    margin: 0 auto;
+    text-align: center;
+    width: 48px;
+}
+.twittImage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.twittDetails {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+.twittMeta {
+    line-height: 11px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.twittMeta a {
+    color: #FFF;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 11px;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all ease-in-out 700ms;
+    -moz-transition: all ease-in-out 700ms;
+    -webkit-transition: all ease-in-out 700ms;
+    -ms-transition: all ease-in-out 700ms;
+    -o-transition: all ease-in-out 700ms;
+}
+.twittMeta a:hover{
+    color: #5EA9DD;
+    text-decoration: none;
+}
+.twitTime{
+    text-align: center;
+    width: 100%;
+    color: #FFF;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 9px;
+    text-transform: uppercase;
+}
+.tweetSlideSection .bx-wrapper .bx-controls-direction a{
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    border: none;
+    transition: all ease-in-out 700ms;
+    -moz-transition: all ease-in-out 700ms;
+    -webkit-transition: all ease-in-out 700ms;
+    -ms-transition: all ease-in-out 700ms;
+    -o-transition: all ease-in-out 700ms;
+}
+.tweetSlideSection .bx-wrapper .bx-controls-direction a:hover{
+    background: rgba(255, 255, 255, 1);
+}
+.tweetSlideSection .bx-wrapper .bx-controls-direction a.bx-prev{
+    left: -70px;
+}
+.tweetSlideSection .bx-wrapper .bx-controls-direction a.bx-next{
+    right: -70px;
+}
+.tweetSlideSection .bx-wrapper .bx-controls-direction a.bx-prev:before{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-bottom: 1px solid #5ea9dd;
+    border-left: 1px solid #5ea9dd;
+    content: "";
+    left: 22px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto 0;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transition: all ease-in-out 700ms;
+    -moz-transition: all ease-in-out 700ms;
+    -webkit-transition: all ease-in-out 700ms;
+    -ms-transition: all ease-in-out 700ms;
+    -o-transition: all ease-in-out 700ms;
+}
+.tweetSlideSection .bx-wrapper .bx-controls-direction a.bx-next:before{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 1px solid #5ea9dd;
+    border-right: 1px solid #5ea9dd;
+    content: "";
+    left: 15px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto 0;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transition: all ease-in-out 700ms;
+    -moz-transition: all ease-in-out 700ms;
+    -webkit-transition: all ease-in-out 700ms;
+    -ms-transition: all ease-in-out 700ms;
+    -o-transition: all ease-in-out 700ms;
+}
+.tweetSlideSection.withArrow .bx-wrapper .bx-pager{
+    display: none;
+}
+.tweetSlideSection.widthBullet .bx-wrapper .bx-controls-direction{
+    display: none;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px)
+{
+    .tweetsliderColumn{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .twittDetails{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .bx-controls-direction{
+        bottom: -100px;
+        height: 50px;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+    .tweetSlideSection .bx-wrapper .bx-controls-direction a{
+        bottom: auto;
+        display: inline-block !important;
+        left: auto !important;
+        margin: 0 !important;
+        position: relative !important;
+        right: auto !important;
+        top: auto;
+        margin-right: 10px !important;
+    }
+    .tweetSlideSection .bx-wrapper .bx-controls-direction a:last-child{
+        margin-right: 0px !important;
+    }
+}

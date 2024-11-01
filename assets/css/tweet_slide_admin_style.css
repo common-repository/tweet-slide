@@ -1,0 +1,28 @@
+.labelTH{
+    width: 25%;
+    border-right: 1px solid #e1e1e1;
+    background: #5EA9DD;
+    color: #FFF !important;
+}
+.fieldTH{
+    width: 75%;
+    font-weight: bold;
+    background: #5EA9DD;
+    color: #FFF !important;
+}
+.labelTD{
+    width: 25%;
+    border-right: 1px solid #e1e1e1;
+    font-weight: bold;
+    vertical-align: middle !important;
+    border-bottom: 1px solid #e1e1e1;
+}
+.fieldTD{
+    width: 75%;
+    vertical-align: middle !important;
+    border-bottom: 1px solid #e1e1e1;
+}
+.fieldTD input[type="text"]{
+    width: 75%;
+    height: 35px;
+}
